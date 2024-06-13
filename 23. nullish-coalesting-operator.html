@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Nullish Operator JS Dasar</h1>
+    <script>
+      let ucapan = "haloo";
+      let data = ucapan;
+      if (data === undefined || data === null) {
+        data = "Ini adalah kata Default";
+      }
+      document.writeln(`<p>${ucapan}</p>`);
+
+      let data2 = ucapan ?? "Ini adalah kata Default";
+      document.writeln(`<p>${data2}</p>`);
+    </script>
+  </body>
+</html>

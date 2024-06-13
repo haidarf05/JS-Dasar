@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Default Parameter JS Dasar</h1>
+    <script>
+      //  Membuat function dengan parameter dan return value
+      function sayHello(firstName, middleName = "Default Parameter") {
+        document.writeln(`<p>${firstName}</p>`);
+        document.writeln(`<p>${middleName}</p>`);
+      }
+      sayHello("Hello", "Male");
+      sayHello("Hello");
+    </script>
+  </body>
+</html>

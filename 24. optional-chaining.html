@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Optional Chaining JS Dasar</h1>
+    <script>
+      const ucapan = {
+        address: {
+          country: "Indonesia",
+        },
+      };
+      //   Pengecekan data pada property ada atau tidak
+      let data = ucapan?.address?.country;
+
+      document.writeln(`<p>Sukses</p>`);
+      document.writeln(`<p>${data}</p>`);
+      document.writeln(`<p>Sukses</p>`);
+    </script>
+  </body>
+</html>

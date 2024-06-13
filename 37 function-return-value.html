@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Function Return Value JS Dasar</h1>
+    <script>
+      //  Membuat function dengan parameter dan return value
+      function sayHello(firstName, lastName) {
+        const say = `${firstName} ${lastName}`;
+        return say;
+      }
+      // Memanggi function dan emangkap return valuenya
+      const result = sayHello("Hello", "World");
+      document.writeln(`<p>${result}</p>`);
+
+      //   Membuat function return value lebih dari satu
+      function getFinalScore(value) {
+        if (value > 90) {
+          return "A";
+        } else if (value > 80) {
+          return "B";
+        } else if (value > 70) {
+          return "C";
+        } else if (value > 60) {
+          return "D";
+        } else {
+          return "E";
+        }
+      }
+      const getValue = getFinalScore(81);
+      document.writeln(`<p>${getValue}</p>`);
+
+      //   Menghentikan eksekusi dengan return
+      function isCOntains(array, searchValue) {
+        for (const element of array) {
+          if (element === searchValue) {
+            return true;
+          }
+        }
+        return false;
+      }
+      const array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+      const searchValue = 10;
+      const found = isCOntains(array, searchValue);
+      document.writeln(`<p>${found}</p>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Function Generator JS Dasar</h1>
+    <script>
+      // Function generator sederahana
+      function* createName() {
+        yield "FristName";
+        yield "MiddleName";
+        yield "LastName";
+      }
+
+      const names = createName();
+      for (const name of names) {
+        document.writeln(`<p>${name}  </p>`);
+      }
+      // ==============================================================================
+      //   Function generator kompleks
+      // lazy
+      function* buatGanjil(value) {
+        for (let i = 1; i <= value; i++) {
+          if (i % 2 === 1) {
+            document.writeln(`<p> Yield${i}</p>`);
+
+            yield i;
+          }
+        }
+      }
+
+      const angkaGanjil = buatGanjil(100);
+      document.writeln(`<p>${angkaGanjil.next().value}  </p>`);
+      document.writeln(`<p>${angkaGanjil.next().value}  </p>`);
+      document.writeln(`<p>${angkaGanjil.next().value}  </p>`);
+      document.writeln(`<p>${angkaGanjil.next().value}  </p>`);
+
+      // for (const angka of angkaGanjil) {
+      //   document.writeln(`<p>${angka}  </p>`);
+      // }
+
+      // eager
+      // function buatGanjilArray(value) {
+      //   const result = [];
+      //   for (let i = 1; i <= value; i++) {
+      //     if (i % 2 === 1) {
+      //       document.writeln(`<p> Yield ${i}  </p>`);
+
+      //       result.push(i);
+      //     }
+      //   }
+      //   return result;
+      // }
+
+      // const angkaGanjil = buatGanjilArray(100);
+      // for (const angka of angkaGanjil) {
+      //   document.writeln(`<p>${angka}  </p>`);
+      // }
+    </script>
+  </body>
+</html>

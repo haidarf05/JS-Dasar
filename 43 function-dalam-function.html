@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Function didalam Function JS Dasar</h1>
+    <script>
+      //  Membuat function didalam function
+      function outer() {
+        function inner() {
+          document.writeln(`<p>Inner</p>`);
+        }
+        inner();
+      }
+      outer();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar String dan Number JS Dasar</h1>
+    <div>
+      <div>
+        <h3>Function Konversi Data</h3>
+        <table style="border: 1px solid black">
+          <thead>
+            <tr>
+              <th>Function</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ParseInt (String)</td>
+              <td>Mengkonversi dari string ke number (Bilangan Bulat)</td>
+            </tr>
+            <tr>
+              <td>ParseFloat (String)</td>
+              <td>Mengkonversi dari string ke number (Bilangan Pecahan)</td>
+            </tr>
+            <tr>
+              <td>Number (String)</td>
+              <td>
+                Mengkonversi dari string ke number (Bilangan Bulat atau Pecahan)
+              </td>
+            </tr>
+            <tr>
+              <td>number.toString()</td>
+              <td>Mengkonversi dari number ke String</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      let value1 = parseInt("1");
+      let value2 = 1;
+      let sum = value1 + value2;
+      document.writeln("<br>");
+      document.writeln(`${sum}`);
+
+      document.writeln(`<p> ${parseInt("1.2")}</p>`);
+      document.writeln(`<p> ${parseFloat("1.2")}</p>`);
+      document.writeln(`<p> ${Number("1.3")}</p>`);
+      document.writeln(`<p> ${value2.toString() + value1}</p>`);
+      document.writeln(`<p> ${Number("1.3aaaa")}</p>`);
+      document.writeln(`<p> ${isNaN("1.3aaaa")}</p>`);
+      document.writeln(`<p> ${isNaN("1.3")}</p>`);
+    </script>
+  </body>
+</html>

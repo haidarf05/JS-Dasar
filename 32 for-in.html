@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar For In JS Dasar</h1>
+    <script>
+      // Kode for in Onject
+      const person = {
+        name: "tes",
+        midName: "John",
+        lastName: "Doe",
+      };
+      for (const property in person) {
+        document.write(`<p>Property ${property} : ${person[property]}`);
+      }
+      // Kode for in Array
+      const person2 = ["tes2", "John2", "Doe2"];
+
+      for (const index in person2) {
+        document.write(`<p>Index ${index} : ${person2[index]}`);
+      }
+    </script>
+  </body>
+</html>

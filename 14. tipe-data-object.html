@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Object JS Dasar</h1>
+
+    <script>
+      const obj = {};
+
+      //Menambah atau mengurang paa object
+      obj["nama"] = "tes";
+      obj["alamat"] = "Sini";
+      obj["umur"] = 30;
+      document.writeln(obj);
+      console.table(obj);
+
+      delete obj["alamat"];
+      console.table(obj);
+
+      //Membuat Object dengan properties
+      const obj1 = {
+        //Attribute      Value
+        nama: "Tes",
+        alamat: "Sini",
+        umur: 30,
+      };
+      console.table(obj1);
+
+      //Mengakse Properti pada object
+      console.log(`Nama : ${obj1.nama}`);
+      console.log(`Alamat : ${obj1["alamat"]}`);
+    </script>
+  </body>
+</html>

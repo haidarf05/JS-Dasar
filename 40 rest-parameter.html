@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Rest Parameter JS Dasar</h1>
+    <script>
+      //  Membuat Rest Parameter
+      function sum(firstName, ...data) {
+        let total = 0;
+        for (const item of data) {
+          total += item;
+        }
+        document.writeln(`<p>total ${firstName} is ${total}</p>`);
+      }
+      sum("Orance", 2, 3, 4, 5, 6, 7, 8, 9, 0);
+      sum("Banana", 2, 3, 4, 5, 6, 7, 8, 9, 0);
+      sum("Apple", 2, 3, 4, 5, 6, 7, 8, 9, 0);
+      const value = [10, 9, 8, 7, 9, 2];
+      sum("blue", ...value);
+
+      //   Kode arguments object sebelum rest parameter
+      function oldSum() {
+        let total = 0;
+        for (const arg of arguments) {
+          total += arg;
+        }
+        document.writeln(`<p>total ${total}</p>`);
+      }
+      oldSum(1, 2, 3, 4, 5, 6, 7, 8, 9);
+    </script>
+  </body>
+</html>

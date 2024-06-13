@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Typeof JS Dasar</h1>
+    <div>
+      <div>
+        <h3>Function Konversi Data</h3>
+        <table style="border: 1px solid black">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Hasil Typeof</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Undefined</td>
+              <td>"undefined"</td>
+            </tr>
+            <tr>
+              <td>Null</td>
+              <td>"object"</td>
+            </tr>
+            <tr>
+              <td>Boolean</td>
+              <td>"boolean"</td>
+            </tr>
+            <tr>
+              <td>Number</td>
+              <td>"number"</td>
+            </tr>
+            <tr>
+              <td>Biglnt</td>
+              <td>"bigint"</td>
+            </tr>
+            <tr>
+              <td>String</td>
+              <td>"string"</td>
+            </tr>
+            <tr>
+              <td>Symbol</td>
+              <td>"symbol"</td>
+            </tr>
+            <tr>
+              <td>Function</td>
+              <td>"function"</td>
+            </tr>
+            <tr>
+              <td>Lainnya</td>
+              <td>"object"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      let data = 100;
+      const tipeData = typeof data;
+
+      document.writeln(`<p> ${tipeData}</p>`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Arrow Function JS Dasar</h1>
+    <script>
+      //  Arrow Function
+      //   - Arrow function mirip anonymous function
+      const sayHello = (name) => {
+        const say = `Hello ${name}`;
+        document.writeln(`${say}`);
+      };
+      sayHello("Saya");
+
+      //   Arrow function tanpa block ({})
+      const sayHello2 = (name) => document.writeln(`<p>${name}</p>`);
+      sayHello2("saya lagi");
+
+      //   Arrow function retrun value
+      //   - tidak perlu menggunakan return
+      const sum = (first, second) => first + second;
+      document.writeln(`<p>${sum(10, 20)}</p>`);
+
+      //   Arrow function tanpa kurung parameter
+      const sayHello3 = (name) => document.writeln(`<p>${name}</p>`);
+      sayHello3("saya lagiiiii");
+
+      //   arrow function sebagai parameter
+      //    - anonymous function
+      function giveMeName(callback) {
+        callback("saya sendiri");
+      }
+      //   arrowfunction
+      giveMeName((name) => document.writeln(`<p>${name}</p>`));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Function Sebagai Value JS Dasar</h1>
+    <script>
+      //  Membuat Function di variable
+      function sayHello(name) {
+        document.writeln(`<p>Hello ${name}</p> `);
+      }
+      let say = sayHello;
+      sayHello("Eko");
+      say("Budi");
+
+      //   Kode function di parameter
+      let say2 = sayHello;
+      function giveMeName(callback) {
+        callback("Eko");
+      }
+      giveMeName(sayHello);
+      giveMeName(say2);
+    </script>
+  </body>
+</html>

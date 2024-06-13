@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Scope JS Dasar</h1>
+    <script>
+      // global scope
+      let counter = 0;
+      function hitme() {
+        //  local scope function hitMe
+
+        counter++;
+      }
+
+      hitme();
+      hitme();
+
+      document.writeln(`<p>${counter}</p>`);
+      // ==============================================================================
+      //   local Scope
+      function first() {
+        // local scope first
+        let firstVariable = "first";
+      }
+      function second() {
+        // local scope second
+        let secondVariable = "Second";
+        console.info(firstVariable); //ERROR
+      }
+
+      first();
+      second();
+      // Global scope
+      console.info(firstVariable); //ERROR
+      console.info(secondVariable); //ERROR
+      // ========================================================================
+      //   Nested Function
+      function first() {
+        //Local scope first
+        let firstVariable = "First";
+        function firstNested() {
+          document.writeln(`<p>${firstVariable}</p>`);
+          let firstNestedVariable = "First Nested";
+        }
+        // document.writeln(`<p>${firstNestedVariable}</p>`); //ERROR
+        firstNested();
+      }
+      first();
+    </script>
+  </body>
+</html>

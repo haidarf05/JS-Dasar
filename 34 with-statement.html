@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar With Statement JS Dasar</h1>
+    <script>
+      // Kode Tanpa with statement
+      const person = {
+        name: "tes",
+        midName: "John",
+        lastName: "Doe",
+      };
+      document.write(`<p>${person.name}</p>`);
+      document.write(`<p>${person.midName}</p>`);
+      document.write(`<p>${person.lastName}</p>`);
+
+      //   Kode dengan with statement
+      with (person) {
+        document.write(`<p>${name}</p>`);
+        document.write(`<p>${midName}</p>`);
+        document.write(`<p>${lastName}</p>`);
+      }
+    </script>
+  </body>
+</html>

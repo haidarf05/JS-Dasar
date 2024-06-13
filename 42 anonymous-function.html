@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Anonymous Function JS Dasar</h1>
+    <script>
+      //  Membuat Anonymous Function di variable
+      let say = function (name) {
+        document.writeln(`<p>Hello ${name}</p> `);
+      };
+      say("Budi");
+      say("Eko");
+
+      //   Kode  Anonymous function di parameter
+      function giveMeName(callback) {
+        callback("Eko");
+      }
+      giveMeName(say);
+      giveMeName(function (name) {
+        document.writeln(`<p>Hi ${name}</p> `);
+      });
+      giveMeName(say2);
+    </script>
+  </body>
+</html>

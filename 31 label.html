@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Label Loop JS Dasar</h1>
+    <script>
+      // Kode label
+      //   loopi: for (let i = 1; i <= 100; i++) {
+      //     loopj: for (let j = 0; j < 10; j++) {
+      //       document.writeln(`<p>${i} - ${j}</p>`);
+      //     }
+      //   }
+
+      // kode : Continue atau Break di label
+      loopi: for (let i = 0; i <= 10; i++) {
+        loopj: for (let j = 0; j < 100; j++) {
+          if (j > 10) {
+            continue loopi;
+          }
+          document.writeln(`<p>${i} - ${j}</p>`);
+        }
+      }
+    </script>
+  </body>
+</html>

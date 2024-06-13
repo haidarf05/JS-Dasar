@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .content {
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Belajar Operator Logika JS Dasar</h1>
+    <div class="container">
+      <div class="content">
+        <h3>Operator Perbandingan</h3>
+        <table style="border: 1px solid black">
+          <thead>
+            <tr>
+              <th>Operator</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>&&</td>
+              <td>Dan</td>
+            </tr>
+            <tr>
+              <td>||</td>
+              <td>Atau</td>
+            </tr>
+            <tr>
+              <td>!</td>
+              <td>Kebalikan</td>
+            </tr>
+          </tbody>
+        </table>
+        <script>
+          let nilai1 = 0;
+          let nilai2 = 80;
+          let lulus1 = nilai1 > 75;
+          document.writeln("Contoh Logika");
+          document.writeln("<br>");
+          document.writeln(lulus1);
+          let lulus2 = nilai2 > 75;
+          document.writeln("<br>");
+          document.writeln(lulus2);
+
+          document.writeln("<br>");
+
+          document.write(lulus1 && lulus2);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

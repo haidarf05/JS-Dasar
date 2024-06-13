@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Falsy and Truthy JS Dasar</h1>
+    <div>
+      <div>
+        <h3>Data Falsy</h3>
+        <table style="border: 1px solid black">
+          <thead>
+            <tr>
+              <th>Data dianggap Falsy</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>False</td>
+              <td>Boolean False</td>
+            </tr>
+            <tr>
+              <td>0,-0</td>
+              <td>Number 0 dan -0 dianggap false</td>
+            </tr>
+            <tr>
+              <td>"" , ``, ''</td>
+              <td>String kosong dianggap false</td>
+            </tr>
+            <tr>
+              <td>null</td>
+              <td>null dianggap false</td>
+            </tr>
+            <tr>
+              <td>undefined</td>
+              <td>undefined dianggap false</td>
+            </tr>
+            <tr>
+              <td>NaN</td>
+              <td>Not a Number dianggap false</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      const data = "";
+      if (data) {
+        document.writeln(`<p>Sukses</p>`);
+      } else {
+        document.writeln(`<p>Gaagal</p>`);
+      }
+    </script>
+  </body>
+</html>

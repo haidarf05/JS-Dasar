@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Ternary Operator JS Dasar</h1>
+    <script>
+      const nilai = 80;
+      let ucapan;
+      if (nilai >= 70) {
+        ucapan = "Selamat anda lulus";
+      } else {
+        ucapan = "Silahkan coba lagi";
+      }
+      //   Ternary Operator
+      const ucapan2 = nilai >= 70 ? "Selamat anda lulus" : "Silahkan coba lagi";
+      document.writeln(`<p>${ucapan}</p>`);
+      document.writeln(`<p>${ucapan2}</p>`);
+    </script>
+  </body>
+</html>

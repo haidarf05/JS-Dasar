@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    .container {
+      display: flex;
+    }
+    .content {
+      margin: 10px;
+      padding: 10px;
+    }
+  </style>
+  <body>
+    <h1>Belajar Operator Matematika JS Dasar</h1>
+    <div class="container">
+      <div class="content">
+        <h3>Operator Aritmatika</h3>
+        <table style="border: 1px solid black">
+          <thead>
+            <tr>
+              <th>Operator</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+</td>
+              <td>Pertambahan</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Pengurangan</td>
+            </tr>
+            <tr>
+              <td>*</td>
+              <td>Perkalian</td>
+            </tr>
+            <tr>
+              <td>**</td>
+              <td>Exponensial</td>
+            </tr>
+            <tr>
+              <td>/</td>
+              <td>Pembagian</td>
+            </tr>
+            <tr>
+              <td>%</td>
+              <td>Modulus / Sisa Bagi</td>
+            </tr>
+          </tbody>
+        </table>
+        <script>
+          document.writeln("<br>");
+
+          document.writeln("Contoh Aritmatika");
+          document.writeln("<br>");
+          document.writeln("Penjumlahan :");
+
+          let result = 1 + 2;
+          let originalResult = result;
+          document.writeln("1+2 =" + result);
+          document.writeln("<br>");
+          document.write("Pengurangan :");
+          result = result - 1;
+          document.write(originalResult + " - 1 = " + result);
+          document.writeln("<br>");
+
+          document.write("Perkalian : ");
+          originalResult = result;
+          result = result * 2;
+          document.write(originalResult + " * 2 = " + result);
+          document.writeln("<br>");
+          document.writeln("Pembagian : ");
+          originalResult = result;
+          result = result / 2;
+          document.write(originalResult + " / 2 = " + result);
+        </script>
+      </div>
+      <div class="content">
+        <h3>Operator Augmented Assigment</h3>
+        <table style="border: 1px solid black">
+          <thead>
+            <tr>
+              <th>Operator Matematika</th>
+              <th>Operator Augmented Assigment</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>result = result + 10</td>
+              <td>result += 10</td>
+            </tr>
+            <tr>
+              <td>result = result - 10</td>
+              <td>result -= 10</td>
+            </tr>
+            <tr>
+              <td>result = result * 10</td>
+              <td>result *= 10</td>
+            </tr>
+            <tr>
+              <td>result = result ** 10</td>
+              <td>result **= 10</td>
+            </tr>
+            <tr>
+              <td>result = result / 10</td>
+              <td>result /= 10</td>
+            </tr>
+            <tr>
+              <td>result = result % 10</td>
+              <td>result += 10</td>
+            </tr>
+          </tbody>
+        </table>
+        <script>
+          document.writeln("<br>");
+
+          document.writeln("Operator Augmented Assigment");
+          document.writeln("<br>");
+          document.writeln("Penjumlahan :");
+
+          let result1 = 1 + 2;
+          let originalResult1 = result1;
+          document.writeln("1+2 =" + result1);
+          document.writeln("<br>");
+          document.write("Pengurangan :");
+          result1 -= 1;
+          document.write(originalResult1 + " - 1 = " + result1);
+          document.writeln("<br>");
+
+          document.write("Perkalian : ");
+          originalResult1 = result1;
+          result1 *= 2;
+          document.write(originalResult1 + " * 2 = " + result1);
+          document.writeln("<br>");
+          document.writeln("Pembagian : ");
+          originalResult1 = result1;
+          result1 /= 2;
+          document.write(originalResult1 + " / 2 = " + result1);
+        </script>
+      </div>
+      <div class="content">
+        <h3>Operator Unary</h3>
+        <table style="border: 1px solid black">
+          <thead>
+            <tr>
+              <th>Operator</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>+</td>
+              <td>Menandakan nilai positif</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>Menandakan nilai negatif</td>
+            </tr>
+            <tr>
+              <td>++</td>
+              <td>Increament, Menaikkan 1 angka</td>
+            </tr>
+            <tr>
+              <td>--</td>
+              <td>Decreament, Menurunkan 1 angka</td>
+            </tr>
+          </tbody>
+        </table>
+        <script>
+          document.writeln("<br>");
+
+          document.writeln("Operator Unary ");
+          document.writeln("<br>");
+          let result2 = +1;
+          document.writeln(result2);
+          document.writeln("<br>");
+          result2--;
+          document.writeln(result2);
+          document.writeln("<br>");
+          result2++;
+          document.writeln(result2);
+          document.writeln("<br>");
+          result2 = -result2;
+          document.writeln(result2);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

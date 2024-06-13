@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar String Template JS Dasar</h1>
+    <script>
+      let nama = "Tes";
+      let lengkap = `Nama : ${nama}`;
+      let nilai = 80;
+      let status = `Status : ${nilai > 75}`;
+      let multiLine = `Ini Merupakan Contoh
+      dari MultiLine Menggunakan backtick`;
+      document.writeln(`${lengkap} `);
+      document.writeln("<br>");
+      document.writeln(`${status}`);
+      document.writeln("<br>");
+      document.writeln(`${multiLine}`);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .container {
+        display: flex;
+      }
+      .content {
+        margin: 10px;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Belajar Operator Perbandingan JS Dasar</h1>
+    <div class="container">
+      <div class="content">
+        <h3>Operator Perbandingan</h3>
+        <table style="border: 1px solid black">
+          <thead>
+            <tr>
+              <th>Operator</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>></td>
+              <td>Lebih Dari</td>
+            </tr>
+            <tr>
+              <td><</td>
+              <td>Kurang Dari</td>
+            </tr>
+            <tr>
+              <td>>=</td>
+              <td>Lebih Dari Sama Dengan</td>
+            </tr>
+            <tr>
+              <td><=</td>
+              <td>Kurang Dari Sama Dengan</td>
+            </tr>
+            <tr>
+              <td>==</td>
+              <td>Sama Dengan</td>
+            </tr>
+            <tr>
+              <td>===</td>
+              <td>Sama Dengan dan Sama Tipe</td>
+            </tr>
+            <tr>
+              <td>!=</td>
+              <td>Tidak Sama Dengan</td>
+            </tr>
+            <tr>
+              <td>!==</td>
+              <td>Tidak Sama Dengan dan Tidak Sama tipe</td>
+            </tr>
+          </tbody>
+        </table>
+        <script>
+          document.writeln("<br>");
+
+          document.writeln("Contoh Perbandingan");
+          document.writeln("<br>");
+
+          let result = 2 == "2";
+          document.writeln(result);
+          document.writeln("<br>");
+          result = result === "2";
+          document.write(result);
+          document.writeln("<br>");
+
+          result = 5 > 10;
+          document.write(result);
+          document.writeln("<br>");
+          result = 5 < 10;
+          document.write(result);
+        </script>
+      </div>
+    </div>
+  </body>
+</html>

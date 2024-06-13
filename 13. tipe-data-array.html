@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Array JS Dasar</h1>
+    <div>
+      <div>
+        <h3>Operasi Array</h3>
+        <table style="border: 1px solid black">
+          <thead>
+            <tr>
+              <th>Operasi</th>
+              <th>Keterangan</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>array.push()</td>
+              <td>menambahkan data array dari index ke 0</td>
+            </tr>
+            <tr>
+              <td>array.length()</td>
+              <td>Untuk mendapatkan panjang array</td>
+            </tr>
+            <tr>
+              <td>array.[index]</td>
+              <td>Mendapat data di posisi index</td>
+            </tr>
+            <tr>
+              <td>array.[index] = Value</td>
+              <td>Mengubah data di posisi index</td>
+            </tr>
+            <tr>
+              <td>delete array[index]</td>
+              <td>Menghapus data posisi index, namun index tidak bergeser</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script>
+      let arr1 = [];
+      let arr2 = ["arr1", "arr2", 2, true];
+      arr2[2] = "diganti";
+      //Nambah data ke array dari mulai index ke 0
+      arr1.push(1);
+      document.writeln(arr1);
+      document.writeln(arr2);
+    </script>
+  </body>
+</html>

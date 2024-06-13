@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Recusive Function JS Dasar</h1>
+    <script>
+      // Factiorial Loop
+      function factiorial(value) {
+        let result = 1;
+        for (let i = 1; i <= value; i++) {
+          result *= i;
+        }
+        return result;
+      }
+
+      document.writeln(`<p>${factiorial(7)}  </p>`);
+      document.writeln(`<p>${1 * 2 * 3 * 4 * 5 * 6 * 7}</p>`);
+
+      // ==============================================================================
+      //   Factorial Recursive
+      function factorialRecursive(value) {
+        if (value === 1) {
+          return 1;
+        } else {
+          return value * factorialRecursive(value - 1);
+        }
+      }
+      document.writeln(`<p>${factorialRecursive(7)}  </p>`);
+    </script>
+  </body>
+</html>

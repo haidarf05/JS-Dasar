@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Operator In JS Dasar</h1>
+
+    <script>
+      let data = {
+        nama: "Ini Namku",
+        Kelas: 12,
+      };
+
+      if ("nama" in data) {
+        document.writeln(`Hello ${data.nama}`);
+      } else {
+        document.writeln(` Hello`);
+      }
+      document.writeln("<br>");
+
+      const murid = {
+        nama: undefined,
+        kelas: 12,
+      };
+      if ("nama" in murid) {
+        document.writeln(`Hello ${murid.nama}`);
+      } else {
+        document.writeln(` Hello`);
+      }
+
+      const data2 = [null, "nama", null];
+      const result = 0 in data2;
+      document.writeln(result);
+    </script>
+  </body>
+</html>

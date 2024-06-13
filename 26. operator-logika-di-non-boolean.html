@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Belajar Opertator data di data booelan JS Dasar</h1>
+
+    <script>
+      document.writeln("Kode Operator OR (||) :");
+      document.writeln("hello" || "");
+      document.writeln("" || []);
+      document.writeln("0" || "NOLL");
+      document.writeln(0 || "NOLL");
+      document.writeln(null || "NULL");
+      document.writeln(undefined || "Undefined");
+
+      let person = {
+        firstName: "",
+        lastName: "Kedua",
+      };
+      const name = person.firstName || person.lastName;
+      document.writeln(name);
+
+      document.writeln("<br>");
+      document.writeln("Kode Operator AND (&&) : ");
+      document.writeln("hello" && "");
+      document.writeln("" && []);
+      document.writeln("0" && "NOLL");
+      document.writeln(0 && "NOLL");
+      document.writeln(null && "NULL");
+      document.writeln(undefined && "Undefined");
+    </script>
+  </body>
+</html>
