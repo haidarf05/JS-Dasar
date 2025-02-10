@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kata Kunci This</title>
+  </head>
+  <body>
+    <script>
+      console.info(this);
+      function simple() {
+        console.info(this);
+        function inner() {
+          console.info(this);
+        }
+        inner();
+      }
+      simple();
+
+      //   kata kunci this jika digunakan di function akan menjadi window,
+      // jika di letakkan di object, akan menjadi pemilik object
+
+      const person = {
+        name: "EKO",
+        sayHello: function (name) {
+          console.info(`Hello ${name} My name is ${this.name}`);
+        },
+      };
+      person.sayHello("BUDY");
+    </script>
+  </body>
+</html>

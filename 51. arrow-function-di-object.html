@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrow Function di object</title>
+  </head>
+  <body>
+    <script>
+      // Jika tidak perlu mengakses argumen object maka menggunakan arrow function
+      // Jika perlu mengakses argumen object maka gunakan anonymous object
+
+      const person = {
+        name: "Eko",
+        sayHello: (name) => {
+          console.info(`Hellow ${name}`);
+        },
+      };
+      person.sayHello("BUDI");
+    </script>
+  </body>
+</html>

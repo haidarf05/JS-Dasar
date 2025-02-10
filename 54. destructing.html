@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring</title>
+  </head>
+  <body>
+    <script>
+      // Distructuring Array
+      {
+        const name = ["eko", "budi", "kurniawan", "joko", "setiabudi"];
+        let [firstName, middleName, lastName, ...others] = name;
+
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+        console.info(others);
+      }
+
+      // Distructuring Object
+      {
+        const person = {
+          firstName: "Eko",
+          lastName: "Budi",
+          address: {
+            street: "Jl.blablabla",
+            city: "Jakarta",
+            country: "Indonesia",
+          },
+          hobby: "Game",
+        };
+        let { firstName, lastName, address, ...others } = person;
+        console.info(firstName);
+        console.info(lastName);
+        console.info(address);
+        console.info(others);
+      }
+
+      // Distructuring Nested Object
+      {
+        const person = {
+          firstName: "Eko",
+          lastName: "Budi",
+          address: {
+            street: "Jl.blablabla",
+            city: "Jakarta",
+            country: "Indonesia",
+          },
+          hobby: "Game",
+        };
+        let {
+          firstName,
+          lastName,
+          address: { country, city, street },
+          ...others
+        } = person;
+        console.info(firstName);
+        console.info(lastName);
+        console.info(country);
+        console.info(city);
+        console.info(street);
+        console.info(others);
+      }
+
+      // Distructuring di Function Parameter 1
+      {
+        function displayPerson({ firstName, middleName, lastName }) {
+          console.info(firstName);
+          console.info(middleName);
+          console.info(lastName);
+        }
+        const person = {
+          firstName: "Eko",
+          middleName: "Buddy",
+          lastName: "Budi",
+        };
+        displayPerson(person);
+      }
+      //  Distructuring di Function Parameter 2
+      {
+        function sum([first, second]) {
+          return first + second;
+        }
+        console.info(sum([10, 10]));
+        console.info(sum([20, 10]));
+      }
+
+      // Default Value Distructuring Array
+      {
+        const name = ["eko", "budi"];
+        let [firstName, middleName, lastName = "Setiadi"] = name;
+
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+      }
+      // Default Value Distructuring Object
+      {
+        const person = {
+          firstName: "Eko",
+          middleName: "Budi",
+        };
+        let { firstName, middleName, lastName = "SetiaBudi" } = person;
+        console.info(firstName);
+        console.info(middleName);
+        console.info(lastName);
+      }
+      // Default Value Distructuring Object
+      {
+        const {
+          firstName: namaDepan,
+          middleName: namaTengah = "BUDI",
+          lastName: namaBelakang,
+        } = person;
+        console.info(namaDepan);
+        console.info(namaTengah);
+        console.info(namaBelakang);
+      }
+    </script>
+  </body>
+</html>

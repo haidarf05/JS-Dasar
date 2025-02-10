@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masalah di var</title>
+  </head>
+  <body>
+    <script>
+      // vaar tidak direkomendasikan di js moderen, bisa menggunakan let
+      // alasan tidak menggunakan var karena tidak memiliki block scope
+      // tidak mengikat di loacl scope
+      //   var tidak terprediksi
+
+      //   Global Scope
+      //   let i = 20;
+      //   for (let i = 0; i < 10; i++) {
+      //     //   local Scope
+      //     console.log(`Local : ${i}`);
+      //   }
+      //   console.log(`Global : ${i}`);
+
+      //   Global Scope
+      var i = 20;
+      for (var i = 0; i < 10; i++) {
+        //   local Scope
+        console.log(`Local : ${i}`);
+      }
+      console.log(`Global : ${i}`);
+    </script>
+  </body>
+</html>
